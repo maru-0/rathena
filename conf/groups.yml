@@ -219,7 +219,7 @@ Body:
       macro_detect: true
    - Id: 98
     Name: NotAdmin
-    Level: 99
+    Level: 98
     Inherit:
       Support: true
       Law Enforcement: true
