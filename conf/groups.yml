@@ -44,6 +44,8 @@ Body:
   - Id: 0
     # group 0 is the default group for every new account
     Name: Player
+    Inherit:
+      Admin: true
     Level: 0
     Commands:
       changedress: true
@@ -178,10 +180,29 @@ Body:
     # Can do everything Players can
     Inherit:
       Player: true
+      Support: true
+      Law Enforcement: true
     Level: 0
     Commands:
       rates: true
       who: true
+    Permissions:
+      can_trade: true
+      can_party: true
+      command_enable: true
+      all_skill: false
+      all_equipment: false
+      skill_unconditional: false
+      use_check: true
+      use_changemaptype: true
+      all_commands: true
+      channel_admin: true
+      can_trade_bounded: true
+      item_unconditional: false
+      bypass_stat_onclone: true
+      bypass_max_stat: true
+      macro_register: true
+      trade_unconditional: true
   - Id: 10
     Name: Law Enforcement
     Inherit:
