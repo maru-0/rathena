@@ -117,7 +117,6 @@ Body:
                 Rate: 6000
                 Price: 2000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 6000
                 Price: 20000
@@ -127,7 +126,6 @@ Body:
                 Rate: 9000
                 Price: 2000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 6
             Bonus: 800
             Chances:
@@ -135,7 +133,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 20000
@@ -145,7 +142,6 @@ Body:
                 Rate: 7000
                 Price: 2000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 7
             Bonus: 1000
             Chances:
@@ -153,7 +149,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 20000
@@ -163,7 +158,6 @@ Body:
                 Rate: 7000
                 Price: 2000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 8
             Bonus: 1200
             BlacksmithBlessingAmount: 1
@@ -172,7 +166,6 @@ Body:
                 Rate: 2000
                 Price: 2000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 20000
@@ -182,7 +175,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 9
             Bonus: 1500
             BlacksmithBlessingAmount: 2
@@ -191,7 +183,6 @@ Body:
                 Rate: 2000
                 Price: 2000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 20000
@@ -201,7 +192,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 10
             Bonus: 1800
             BlacksmithBlessingAmount: 4
@@ -210,7 +200,6 @@ Body:
                 Rate: 900
                 Price: 2000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 900
                 Price: 20000
@@ -220,7 +209,6 @@ Body:
                 Rate: 2000
                 Price: 2000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 11
             Bonus: 2100
             BlacksmithBlessingAmount: 7
@@ -229,7 +217,6 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 800
@@ -244,7 +231,6 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 800
@@ -261,7 +247,6 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 800
@@ -278,7 +263,6 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 800
@@ -294,7 +278,6 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 700
@@ -310,7 +293,6 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 700
@@ -326,7 +308,6 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 700
@@ -342,7 +323,6 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 700
@@ -358,7 +338,6 @@ Body:
                 Rate: 500
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 500
@@ -374,7 +353,6 @@ Body:
                 Rate: 500
                 Price: 100000
                 Material: Carnium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 500
@@ -518,12 +496,10 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1500
                 Price: 100000
                 Material: HD_Ethernium
-                BreakingRate: 0
           - Level: 12
             Bonus: 2880
             BlacksmithBlessingAmount: 11
@@ -532,12 +508,10 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1500
                 Price: 100000
                 Material: HD_Ethernium
-                breakingrate: 00000
           - Level: 13
             Bonus: 3360
             BlacksmithBlessingAmount: 16
@@ -548,12 +522,10 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1500
                 Price: 100000
                 Material: HD_Ethernium
-                breakingrate: 00000
           - Level: 14
             Bonus: 3840
             BlacksmithBlessingAmount: 22
@@ -564,12 +536,10 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1500
                 Price: 100000
                 Material: HD_Ethernium
-                breakingrate: 00000
           - Level: 15
             Bonus: 4320
             BroadcastSuccess: true
@@ -579,12 +549,10 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1000
                 Price: 100000
                 Material: HD_Ethernium
-                breakingrate: 00000
           - Level: 16
             Bonus: 4800
             BroadcastSuccess: true
@@ -594,12 +562,10 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1000
                 Price: 100000
                 Material: HD_Etel_Carnium
-                breakingrate: 00000
           - Level: 17
             Bonus: 5400
             BroadcastSuccess: true
@@ -609,12 +575,10 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1000
                 Price: 100000
                 Material: HD_Etel_Carnium
-                breakingrate: 00000
           - Level: 18
             Bonus: 6000
             BroadcastSuccess: true
@@ -624,12 +588,10 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1000
                 Price: 100000
                 Material: HD_Etel_Carnium
-                breakingrate: 00000
           - Level: 19
             Bonus: 6600
             BroadcastSuccess: true
@@ -639,12 +601,10 @@ Body:
                 Rate: 500
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 700
                 Price: 100000
                 Material: HD_Etel_Carnium
-                breakingrate: 00000
           - Level: 20
             Bonus: 7200
             BroadcastSuccess: true
@@ -654,12 +614,10 @@ Body:
                 Rate: 500
                 Price: 100000
                 Material: Etel_Carnium
-                breakingrate: 00000
               - Type: HD
                 Rate: 700
                 Price: 100000
                 Material: HD_Etel_Carnium
-                breakingrate: 00000
   - Group: Weapon
     Levels:
       - Level: 1
@@ -778,7 +736,6 @@ Body:
                 Rate: 6000
                 Price: 50
                 Material: Phracon
-                breakingrate: 00000
               - Type: HD
                 Rate: 6000
                 Price: 20000
@@ -788,7 +745,6 @@ Body:
                 Rate: 9000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 9
             Bonus: 1800
             RandomBonus: 600
@@ -798,7 +754,6 @@ Body:
                 Rate: 4000
                 Price: 50
                 Material: Phracon
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 20000
@@ -808,7 +763,6 @@ Body:
                 Rate: 7000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 10
             Bonus: 2000
             RandomBonus: 900
@@ -818,7 +772,6 @@ Body:
                 Rate: 1900
                 Price: 50
                 Material: Phracon
-                breakingrate: 00000
               - Type: HD
                 Rate: 1900
                 Price: 20000
@@ -828,7 +781,6 @@ Body:
                 Rate: 3000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 11
             Bonus: 2200
             RandomBonus: 1200
@@ -838,7 +790,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -854,7 +805,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -872,7 +822,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -890,7 +839,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -907,7 +855,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -924,7 +871,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -941,7 +887,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -958,7 +903,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -975,7 +919,6 @@ Body:
                 Rate: 1500
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1500
@@ -992,7 +935,6 @@ Body:
                 Rate: 1500
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1500
@@ -1099,7 +1041,6 @@ Body:
                 Rate: 6000
                 Price: 200
                 Material: Emveretarcon
-                breakingrate: 00000
               - Type: HD
                 Rate: 6000
                 Price: 20000
@@ -1109,7 +1050,6 @@ Body:
                 Rate: 9000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 8
             Bonus: 2400
             RandomBonus: 1000
@@ -1119,7 +1059,6 @@ Body:
                 Rate: 4000
                 Price: 200
                 Material: Emveretarcon
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 20000
@@ -1129,7 +1068,6 @@ Body:
                 Rate: 7000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 9
             Bonus: 2700
             RandomBonus: 1500
@@ -1139,7 +1077,6 @@ Body:
                 Rate: 2000
                 Price: 200
                 Material: Emveretarcon
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 20000
@@ -1149,7 +1086,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 10
             Bonus: 3000
             RandomBonus: 2000
@@ -1159,7 +1095,6 @@ Body:
                 Rate: 1900
                 Price: 200
                 Material: Emveretarcon
-                breakingrate: 00000
               - Type: HD
                 Rate: 1900
                 Price: 20000
@@ -1169,7 +1104,6 @@ Body:
                 Rate: 3000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 11
             Bonus: 3300
             RandomBonus: 2500
@@ -1179,7 +1113,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1195,7 +1128,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1213,7 +1145,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1231,7 +1162,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1248,7 +1178,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1265,7 +1194,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -1282,7 +1210,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -1299,7 +1226,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -1316,7 +1242,6 @@ Body:
                 Rate: 1500
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1500
@@ -1333,7 +1258,6 @@ Body:
                 Rate: 1500
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1500
@@ -1425,7 +1349,6 @@ Body:
                 Rate: 6000
                 Price: 5000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 6000
                 Price: 20000
@@ -1435,7 +1358,6 @@ Body:
                 Rate: 9000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 7
             Bonus: 3500
             RandomBonus: 1600
@@ -1444,7 +1366,6 @@ Body:
                 Rate: 5000
                 Price: 5000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 5000
                 Price: 20000
@@ -1454,7 +1375,6 @@ Body:
                 Rate: 8000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 8
             Bonus: 4000
             RandomBonus: 2400
@@ -1464,7 +1384,6 @@ Body:
                 Rate: 2000
                 Price: 5000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 20000
@@ -1474,7 +1393,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 9
             Bonus: 4500
             RandomBonus: 3200
@@ -1484,7 +1402,6 @@ Body:
                 Rate: 2000
                 Price: 5000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 20000
@@ -1494,7 +1411,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 10
             Bonus: 5000
             RandomBonus: 4000
@@ -1504,7 +1420,6 @@ Body:
                 Rate: 1900
                 Price: 5000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 1900
                 Price: 20000
@@ -1514,7 +1429,6 @@ Body:
                 Rate: 3000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 11
             Bonus: 5500
             RandomBonus: 4800
@@ -1524,7 +1438,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1540,7 +1453,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1558,7 +1470,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1576,7 +1487,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1593,7 +1503,6 @@ Body:
                 Rate: 1800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1800
@@ -1610,7 +1519,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -1627,7 +1535,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -1644,7 +1551,6 @@ Body:
                 Rate: 1700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1700
@@ -1661,7 +1567,6 @@ Body:
                 Rate: 1500
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1500
@@ -1678,7 +1583,6 @@ Body:
                 Rate: 1500
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 1500
@@ -1755,7 +1659,6 @@ Body:
                 Rate: 6000
                 Price: 20000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 6000
                 Price: 20000
@@ -1765,7 +1668,6 @@ Body:
                 Rate: 9000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 6
             Bonus: 4200
             RandomBonus: 2800
@@ -1774,7 +1676,6 @@ Body:
                 Rate: 4000
                 Price: 20000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 20000
@@ -1784,7 +1685,6 @@ Body:
                 Rate: 7000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 7
             Bonus: 4900
             RandomBonus: 4200
@@ -1793,7 +1693,6 @@ Body:
                 Rate: 4000
                 Price: 20000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 20000
@@ -1803,7 +1702,6 @@ Body:
                 Rate: 7000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 8
             Bonus: 5600
             RandomBonus: 5600
@@ -1813,7 +1711,6 @@ Body:
                 Rate: 2000
                 Price: 20000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 20000
@@ -1823,7 +1720,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 9
             Bonus: 6300
             RandomBonus: 7000
@@ -1833,7 +1729,6 @@ Body:
                 Rate: 2000
                 Price: 20000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 20000
@@ -1843,7 +1738,6 @@ Body:
                 Rate: 4000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 10
             Bonus: 7000
             RandomBonus: 8400
@@ -1853,7 +1747,6 @@ Body:
                 Rate: 900
                 Price: 20000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 900
                 Price: 20000
@@ -1863,7 +1756,6 @@ Body:
                 Rate: 2000
                 Price: 2000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 11
             Bonus: 7700
             RandomBonus: 9800
@@ -1873,7 +1765,6 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 800
@@ -1889,7 +1780,6 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 800
@@ -1907,7 +1797,6 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 800
@@ -1925,7 +1814,6 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 800
@@ -1942,7 +1830,6 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 700
@@ -1959,7 +1846,6 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 700
@@ -1976,7 +1862,6 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 700
@@ -1993,7 +1878,6 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 700
@@ -2010,7 +1894,6 @@ Body:
                 Rate: 500
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 500
@@ -2027,7 +1910,6 @@ Body:
                 Rate: 500
                 Price: 100000
                 Material: Bradium
-                breakingrate: 0000
                 downgradeamount: 1
               - Type: HD
                 Rate: 500
@@ -2171,12 +2053,10 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1500
                 Price: 100000
                 Material: HD_Etherdeocon
-                breakingrate: 00000
           - Level: 12
             Bonus: 9600
             BlacksmithBlessingAmount: 11
@@ -2185,12 +2065,10 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1500
                 Price: 100000
                 Material: HD_Etherdeocon
-                breakingrate: 00000
           - Level: 13
             Bonus: 10400
             BlacksmithBlessingAmount: 16
@@ -2201,12 +2079,10 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1500
                 Price: 100000
                 Material: HD_Etherdeocon
-                breakingrate: 00000
           - Level: 14
             Bonus: 11200
             BlacksmithBlessingAmount: 22
@@ -2217,12 +2093,10 @@ Body:
                 Rate: 800
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1500
                 Price: 100000
                 Material: HD_Etherdeocon
-                breakingrate: 00000
           - Level: 15
             Bonus: 12000
             BroadcastSuccess: true
@@ -2232,12 +2106,10 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1000
                 Price: 100000
                 Material: HD_Etherdeocon
-                breakingrate: 00000
           - Level: 16
             Bonus: 12800
             BroadcastSuccess: true
@@ -2247,12 +2119,10 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1000
                 Price: 100000
                 Material: HD_Etel_Bradium
-                breakingrate: 00000
           - Level: 17
             Bonus: 13600
             BroadcastSuccess: true
@@ -2262,12 +2132,10 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1000
                 Price: 100000
                 Material: HD_Etel_Bradium
-                breakingrate: 00000
           - Level: 18
             Bonus: 14400
             BroadcastSuccess: true
@@ -2277,12 +2145,10 @@ Body:
                 Rate: 700
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 1000
                 Price: 100000
                 Material: HD_Etel_Bradium
-                breakingrate: 00000
           - Level: 19
             Bonus: 15200
             BroadcastSuccess: true
@@ -2292,12 +2158,10 @@ Body:
                 Rate: 500
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 700
                 Price: 100000
                 Material: HD_Etel_Bradium
-                breakingrate: 00000
           - Level: 20
             Bonus: 16000
             BroadcastSuccess: true
@@ -2307,12 +2171,10 @@ Body:
                 Rate: 500
                 Price: 100000
                 Material: Etel_Bradium
-                breakingrate: 00000
               - Type: HD
                 Rate: 700
                 Price: 100000
                 Material: HD_Etel_Bradium
-                breakingrate: 00000
   - Group: Shadow_Armor
     Levels:
       - Level: 1
@@ -2379,7 +2241,6 @@ Body:
                 Rate: 6000
                 Price: 10000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 6000
                 Price: 10000
@@ -2389,14 +2250,12 @@ Body:
                 Rate: 9000
                 Price: 10000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 6
             Chances:
               - Type: Normal
                 Rate: 4000
                 Price: 10000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 10000
@@ -2406,14 +2265,12 @@ Body:
                 Rate: 7000
                 Price: 10000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 7
             Chances:
               - Type: Normal
                 Rate: 4000
                 Price: 10000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 10000
@@ -2423,14 +2280,12 @@ Body:
                 Rate: 7000
                 Price: 10000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 8
             Chances:
               - Type: Normal
                 Rate: 2000
                 Price: 10000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 10000
@@ -2440,14 +2295,12 @@ Body:
                 Rate: 4000
                 Price: 10000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 9
             Chances:
               - Type: Normal
                 Rate: 2000
                 Price: 10000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 10000
@@ -2457,14 +2310,12 @@ Body:
                 Rate: 4000
                 Price: 10000
                 Material: Enriched_Elunium
-                breakingrate: 00000
           - Level: 10
             Chances:
               - Type: Normal
                 Rate: 900
                 Price: 10000
                 Material: Elunium
-                breakingrate: 00000
               - Type: HD
                 Rate: 900
                 Price: 10000
@@ -2474,7 +2325,6 @@ Body:
                 Rate: 2000
                 Price: 10000
                 Material: Enriched_Elunium
-                breakingrate: 00000
   - Group: Shadow_Weapon
     Levels:
       - Level: 1
@@ -2541,7 +2391,6 @@ Body:
                 Rate: 6000
                 Price: 10000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 6000
                 Price: 10000
@@ -2551,14 +2400,12 @@ Body:
                 Rate: 9000
                 Price: 10000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 6
             Chances:
               - Type: Normal
                 Rate: 4000
                 Price: 10000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 10000
@@ -2568,14 +2415,12 @@ Body:
                 Rate: 7000
                 Price: 10000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 7
             Chances:
               - Type: Normal
                 Rate: 4000
                 Price: 10000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 4000
                 Price: 10000
@@ -2585,14 +2430,12 @@ Body:
                 Rate: 7000
                 Price: 10000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 8
             Chances:
               - Type: Normal
                 Rate: 2000
                 Price: 10000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 10000
@@ -2602,14 +2445,12 @@ Body:
                 Rate: 4000
                 Price: 10000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 9
             Chances:
               - Type: Normal
                 Rate: 2000
                 Price: 10000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 2000
                 Price: 10000
@@ -2619,14 +2460,12 @@ Body:
                 Rate: 4000
                 Price: 10000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
           - Level: 10
             Chances:
               - Type: Normal
                 Rate: 900
                 Price: 10000
                 Material: Oridecon
-                breakingrate: 00000
               - Type: HD
                 Rate: 900
                 Price: 10000
@@ -2636,4 +2475,3 @@ Body:
                 Rate: 2000
                 Price: 10000
                 Material: Enriched_Oridecon
-                breakingrate: 00000
