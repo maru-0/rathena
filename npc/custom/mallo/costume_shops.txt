@@ -1,0 +1,27 @@
+// 28/08/2024
+
+
+prontera,147,242,5	shop	Hat Costume 01	99.
+prontera,147,244,5	shop	Hat Costume 01	99.
+prontera,147,242,5	shop	Hat Costume 01	99.
+prontera,147,244,5	shop	Hat Costume 01	99.
+prontera,147,242,5	shop	Hat Costume 01	99.
+prontera,147,244,5	shop	Hat Costume 01	99.
+prontera,147,242,5	shop	Hat Costume 01	99.
+prontera,147,244,5	shop	Hat Costume 01	99.
+prontera,147,242,5	shop	Hat Costume 01	99.
+prontera,147,244,5	shop	Hat Costume 01	99.
+prontera,147,244,5	shop	Hat Costume 01	99.
+prontera,147,242,5	shop	Hat Costume 01	99.
+prontera,147,244,5	shop	Hat Costume 01	99.
+prontera,147,242,5	shop	Hat Costume 01	99.
+prontera,147,244,5	shop	Hat Costume 01	99.
+
+
+
+
+
+
+
+
+
