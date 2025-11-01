@@ -6515,7 +6515,30 @@ int32 pc_useitem(map_session_data *sd,int32 n)
 	if( itemdb_group.item_exists(IG_CASH_FOOD, nameid) )
 		sd->canusecashfood_tick = tick + battle_config.cashfood_use_interval;
 
-	run_script(script,0,sd->id,fake_nd->id);
+	// Save the old script the player was attached to
+	struct script_state* previous_st = sd->st;
+
+	// Only if there was an old script
+	if( previous_st != nullptr ){
+		// Detach the player from the current script
+		script_detach_rid( previous_st );
+	}
+
+	run_script( script, 0, sd->id, fake_nd->id );
+
+	if( sd->st != nullptr ){
+		script_free_state( sd->st );
+		sd->st = nullptr;
+	}
+
+	// If an old script is present
+	if( previous_st != nullptr ){
+		// Because of detach the RID will be removed, so we need to restore it
+		previous_st->rid = sd->id;
+
+		// Reattach the player to it, so that the limitations of that script kick back in
+		script_attach_state( previous_st );
+	}
 	potion_flag = 0;
 	return 1;
 }
@@ -9155,7 +9178,7 @@ void pc_skillup(map_session_data *sd,uint16 skill_id)
 			if (pc_checkskill(sd, SG_DEVIL) && ((sd->class_&MAPID_THIRDMASK) == MAPID_STAR_EMPEROR || pc_is_maxjoblv(sd)))
 				clif_status_change(sd, EFST_DEVIL1, 1, 0, 0, 0, 1); //Permanent blind effect from SG_DEVIL.
 			if (!pc_has_permission(sd, PC_PERM_ALL_SKILL)) // may skill everything at any time anyways, and this would cause a huge slowdown
-				clif_skillinfoblock(sd);
+				clif_skillinfoblock(*sd);
 		}
 		//else
 		//	ShowDebug("Skill Level up failed. ID:%d idx:%d (CID=%d. AID=%d)\n", skill_id, idx, sd->status.char_id, sd->status.account_id);
@@ -9209,7 +9232,7 @@ int32 pc_allskillup(map_session_data *sd)
 	status_calc_pc(sd,SCO_NONE);
 	//Required because if you could level up all skills previously,
 	//the update will not be sent as only the lv variable changes.
-	clif_skillinfoblock(sd);
+	clif_skillinfoblock(*sd);
 	return 0;
 }
 
@@ -9319,7 +9342,7 @@ int32 pc_resetlvl(map_session_data* sd,int32 type)
 		party_send_levelup(sd);
 
 	status_calc_pc(sd, SCO_FORCE);
-	clif_skillinfoblock(sd);
+	clif_skillinfoblock(*sd);
 
 	return 0;
 }
@@ -9512,7 +9535,7 @@ int32 pc_resetskill(map_session_data* sd, int32 flag)
 
 	if (flag&1) {
 		clif_updatestatus(*sd,SP_SKILLPOINT);
-		clif_skillinfoblock(sd);
+		clif_skillinfoblock(*sd);
 		status_calc_pc(sd, SCO_FORCE);
 	}
 
@@ -10925,6 +10948,14 @@ bool pc_jobchange(map_session_data *sd,int32 job, char upper)
 		}
 	}
 
+	// Update increase cost indicator
+	clif_updatestatus(*sd,SP_USTR);
+	clif_updatestatus(*sd,SP_UAGI);
+	clif_updatestatus(*sd,SP_UVIT);
+	clif_updatestatus(*sd,SP_UINT);
+	clif_updatestatus(*sd,SP_UDEX);
+	clif_updatestatus(*sd,SP_ULUK);
+
 	// Give or reduce trait status points
 	if ((b_class & JOBL_FOURTH) && !(previous_class & JOBL_FOURTH)) {// Change to a 4th job.
 		sd->status.trait_point += battle_config.trait_points_job_change;
@@ -10980,7 +11011,7 @@ bool pc_jobchange(map_session_data *sd,int32 job, char upper)
 	*/
 	//Update skill tree.
 	pc_calc_skilltree(sd);
-	clif_skillinfoblock(sd);
+	clif_skillinfoblock(*sd);
 
 	if (sd->ed)
 		elemental_delete(sd->ed);
@@ -11222,7 +11253,7 @@ void pc_setoption(map_session_data *sd,int32 type, int32 subtype)
 		clif_changelook(sd,LOOK_CLOTHES_COLOR,sd->vd.look[LOOK_CLOTHES_COLOR]);
 	if( sd->vd.look[LOOK_BODY2] )
 		clif_changelook(sd,LOOK_BODY2,sd->vd.look[LOOK_BODY2]);
-	clif_skillinfoblock(sd); // Skill list needs to be updated after base change.
+	clif_skillinfoblock(*sd); // Skill list needs to be updated after base change.
 }
 
 /**
@@ -12226,7 +12257,7 @@ bool pc_equipitem(map_session_data *sd,int16 n,int32 req_pos,bool equipswitch)
 
 	status_calc_pc(sd,SCO_NONE);
 	if (flag) //Update skill data
-		clif_skillinfoblock(sd);
+		clif_skillinfoblock(*sd);
 
 	//OnEquip script [Skotlex]
 	if (id) {
@@ -14191,6 +14222,44 @@ uint64 JobDatabase::parseBodyNode(const ryml::NodeRef& node) {
 				}
 			}
 #endif
+
+			if( this->nodeExists( node, "AlternateOutfits" ) ){
+				const ryml::NodeRef& alternateOutfitNodes = node["AlternateOutfits"];
+
+				for( const ryml::NodeRef& alternateOutfitNode : alternateOutfitNodes ){
+					std::string alternate_name;
+					c4::from_chars( alternateOutfitNode.key(), &alternate_name );
+					std::string job_name_constant = "JOB_" + alternate_name;
+					int64 alternate_constant;
+
+					if( !script_get_constant( job_name_constant.c_str(), &alternate_constant ) ){
+						this->invalidWarning( alternateOutfitNode, "Job %s does not exist.\n", alternate_name.c_str() );
+						return 0;
+					}
+
+					bool active;
+
+					if( !this->asBool( alternateOutfitNodes, alternate_name, active ) ){
+						return 0;
+					}
+
+					uint16 alternate_job_id = static_cast<decltype(alternate_job_id)>( alternate_constant );
+
+					if( util::vector_exists( job->alternate_outfits, alternate_job_id ) ){
+						if( active ){
+							this->invalidWarning( alternateOutfitNode, "Job %s is already in the alternate outfit list.\n", alternate_name.c_str() );
+						}else{
+							util::vector_erase_if_exists( job->alternate_outfits, alternate_job_id );
+						}
+					}else{
+						if( active ){
+							job->alternate_outfits.push_back( alternate_job_id );
+						}else{
+							this->invalidWarning( alternateOutfitNode, "Job %s is not in the alternate outfit list.\n", alternate_name.c_str() );
+						}
+					}
+				}
+			}
 
 			if (!exists)
 				this->put(static_cast<uint16>(job_id), job);
