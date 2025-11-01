@@ -4924,7 +4924,7 @@ static int32 battle_calc_attack_skill_ratio(struct Damage* wd, block_list *src,b
 #ifdef RENEWAL
 			skillratio += 10 + 40 * skill_lv;
 #else
-			skillratio += 25 + 25 * skill_lv;
+			skillratio += -40 + 40 * skill_lv;
 #endif
 			break;
 		case CH_TIGERFIST:
@@ -9410,18 +9410,27 @@ struct Damage battle_calc_magic_attack(block_list *src,block_list *target,uint16
 						skillratio += -100 + 850 + 1250 * skill_lv;
 						skillratio += 70 * pc_checkskill( sd, SS_ANTENPOU ) * skill_lv;
 						skillratio += 5 * sstatus->spl;
+						if( sc != nullptr && sc->hasSCE( SC_FIRE_CHARM_POWER ) ){
+							skillratio += 8500;
+						}
 						RE_LVL_DMOD(100);
 						break;
 					case SS_REIKETSUHOU:
 						skillratio += -100 + 250 + 550 * skill_lv;
 						skillratio += 40 * pc_checkskill( sd, SS_ANTENPOU ) * skill_lv;
 						skillratio += 5 * sstatus->spl;
+						if( sc != nullptr && sc->hasSCE( SC_WATER_CHARM_POWER ) ){
+							skillratio += 7000;
+						}
 						RE_LVL_DMOD(100);
 						break;
 					case SS_KINRYUUHOU:
 						skillratio += -100 + 300 + 400 * skill_lv;
 						skillratio += 15 * pc_checkskill( sd, SS_ANTENPOU ) * skill_lv;
 						skillratio += 5 * sstatus->spl;
+						if( sc != nullptr && sc->hasSCE( SC_GROUND_CHARM_POWER ) ){
+							skillratio += 5500;
+						}
 						RE_LVL_DMOD(100);
 						break;
 					case SS_ANKOKURYUUAKUMU:
@@ -9433,6 +9442,9 @@ struct Damage battle_calc_magic_attack(block_list *src,block_list *target,uint16
 						skillratio += -100 + 600 + 1300 * skill_lv;
 						skillratio += 70 * pc_checkskill( sd, SS_ANTENPOU ) * skill_lv;
 						skillratio += 5 * sstatus->spl;
+						if( sc != nullptr && sc->hasSCE( SC_WIND_CHARM_POWER ) ){
+							skillratio += 8500;
+						}
 						RE_LVL_DMOD(100);
 						break;
 					case SS_ANTENPOU:
@@ -11738,6 +11750,7 @@ static const struct _battle_data {
 	{ "flooritem_lifetime",                 &battle_config.flooritem_lifetime,              60000,  1000,   INT_MAX,        },
 	{ "item_auto_get",                      &battle_config.item_auto_get,                   0,      0,      1,              },
 	{ "first_attack_loot_bonus",            &battle_config.first_attack_loot_bonus,         30,     0,      100,            },
+	{ "mvp_to_loot_priority",               &battle_config.mvp_to_loot_priority,            0,      0,      1,              },
 	{ "item_first_get_time",                &battle_config.item_first_get_time,             3000,   0,      INT_MAX,        },
 	{ "item_second_get_time",               &battle_config.item_second_get_time,            2000,   0,      INT_MAX,        },
 	{ "item_third_get_time",                &battle_config.item_third_get_time,             2000,   0,      INT_MAX,        },
