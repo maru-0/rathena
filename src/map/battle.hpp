@@ -156,6 +156,12 @@ bool is_infinite_defense(block_list *target, int32 flag);
 #define MAX_HAIR_COLOR battle_config.max_hair_color
 #define MIN_CLOTH_COLOR battle_config.min_cloth_color
 #define MAX_CLOTH_COLOR battle_config.max_cloth_color
+#define MIN_BODY_STYLE 0
+#if PACKETVER >= 20231220
+#define MAX_BODY_STYLE (JOB_MAX-1)
+#else
+#define MAX_BODY_STYLE 1
+#endif
 
 struct Battle_Config
 {
@@ -186,7 +192,6 @@ struct Battle_Config
 	int32 item_auto_get;
 	int32 flooritem_lifetime;
 	int32 first_attack_loot_bonus;
-	int32 mvp_to_loot_priority;
 	int32 item_first_get_time;
 	int32 item_second_get_time;
 	int32 item_third_get_time;
