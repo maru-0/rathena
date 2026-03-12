@@ -266,7 +266,7 @@ function	script	Func_Socket	{
 		mes "Therefore, I need to give you a fair warning...";
 		next;
 		mes "[Seiyablem]";
-		mes "If this attempt to add a Slot to your Weapon fails, then the ^FF0000Weapon^000000, ^FF0000and any Cards compounded to it will be destroyed^000000.";
+		mes "If this attempt to add a Slot to your Weapon fails, the zeny will be spent but the materials and the equipment will not be lost.";
 	}
 	else // armor
 	{
@@ -274,7 +274,7 @@ function	script	Func_Socket	{
 		mes "But before that, I must warn you of the risk.";
 		next;
 		mes "[Seiyablem]";
-		mes "If this attempt to add a Slot to your Armor fails, then the ^FF0000Armor^000000, ^FF0000it's upgrades^000000 ^FF0000and any Cards compounded to it will be destroyed^000000.";
+		mes "If this attempt to add a Slot to your Armor fails,  the zeny will be spent but the materials and the equipment will not be lost.";
 	}
 	mes "Do you still want to try to add a Slot?";
 	next;
@@ -313,10 +313,6 @@ function	script	Func_Socket	{
 					mes "However, I am completely innocent.";
 					mes "This is your luck, and it is destined by god, okay?";
 					mes "Don't be so disappointed, and try next time.";
-					delitem .@item_id,1;
-					delitem .@item_req[0],.@req_amount[0];
-					if (.@item_req[1] != 0 && .@req_amount[1] != 0)
-						delitem .@item_req[1],.@req_amount[1];
 					Zeny = Zeny - .@zeny_req *1000;
 					next;
 					mes "[Seiyablem]";

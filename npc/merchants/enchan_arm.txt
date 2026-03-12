@@ -71,7 +71,7 @@ S_EnchantArmor:
 	set .@failrate,getarg(1);
 	mes "[Apprentice Craftsman]";
 	if (countitem(.@itemid) == 1) {
-		mes "Socket enchant will cost you 400,000 zeny. And there will be a random option enchanted. Of course, there is a chance of breaking your armor.";
+		mes "Socket enchant will cost you 400,000 zeny. And there will be a random option enchanted.";
 		next;
 		mes "[Apprentice Craftsman]";
 		mes "First and most importantly.";
@@ -96,7 +96,6 @@ S_EnchantArmor:
 		}
 		progressbar "ffff00",7;
 		set Zeny, Zeny-400000;
-		delitem .@itemid,1;
 		switch (rand(1,.@failrate)) {
 			case 1: set .@addpart,4702;break;
 			case 2: set .@addpart,4712;break;
@@ -141,6 +140,7 @@ S_EnchantArmor:
 				mes "The requested equipment has failed to enchant.";
 				close;
 		}
+		delitem .@itemid,1;
 		getitem2 .@itemid, 1, 1, 0, 0, 0, 0, 0, .@addpart;
 	}
 	else {
