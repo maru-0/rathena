@@ -339,9 +339,9 @@ Body:
       - Id: 9
         Mob: SAND_MAN
         Count: 50
-      - Id: 10
-        Mob: SCORPION
-        Count: 50
+      # - Id: 10
+      #   Mob: SCORPION
+      #   Count: 50
       # - Id: 11
       #   Mob: CHONCHON
       #   Count: 50
@@ -523,9 +523,9 @@ Body:
       - Id: 9
         Mob: ARGIOPE
         Count: 50
-      - Id: 10
-        Mob: AMBERNITE
-        Count: 50
+      # - Id: 10
+      #   Mob: AMBERNITE
+      #   Count: 50
       # - Id: 11
       #   Mob: DUSTINESS
       #   Count: 50
@@ -632,9 +632,9 @@ Body:
       - Id: 9
         Mob: PHEN
         Count: 50
-      - Id: 10
-        Mob: STROUF
-        Count: 50
+      # - Id: 10
+      #   Mob: STROUF
+      #   Count: 50
     #   - Id: 11
     #     Mob: SWORD_FISH
     #     Count: 50
@@ -838,9 +838,9 @@ Body:
       - Id: 9
         Mob: KHALITZBURG
         Count: 50
-      - Id: 10
-        Mob: RAYDRIC
-        Count: 50
+      # - Id: 10
+      #   Mob: RAYDRIC
+      #   Count: 50
     #   - Id: 11
     #     Mob: RAYDRIC_ARCHER
     #     Count: 50
@@ -912,9 +912,9 @@ Body:
       - Id: 9
         Mob: ORK_HERO
         count: 1
-      - Id: 10
-        Mob: DRACULA
-        count: 1
+      # - Id: 10
+      #   Mob: DRACULA
+      #   count: 1
       # - Id: 11
       #   Mob: DOPPELGANGER
       #   count: 1
@@ -1065,7 +1065,7 @@ Body:
         Mob: DELETER_
         Count: 50
     Score: 10
-  - Id: 1041
+  - Id: 1042
     Group: Battle
     Name: Exploring Kiel Robot Factory
     Targets:
@@ -1085,43 +1085,43 @@ Body:
         Mob: CONSTANT
         Count: 25
     Score: 10
-  - Id: 1042
-    Group: Battle
-    Name: Yuno Bosses
-    Targets:
-      - Id: 0
-        Mob: APOCALIPS_H
-        Count: 1
-      - Id: 1
-        Mob: KIEL_
-        Count: 1
-    Score: 10
-  - Id: 1043 ###############################################################################
-    Group: Battle
-    Name: Umbala Explorer
-    Dependents:
-      1044: true
-    Score: 10
-  - Id: 1044
-    Group: Battle
-    Name: Exploring Umbala Forest and Dungeon
-    Targets:
-      - Id: 0
-        Mob: DRYAD
-        Count: 50
-      - Id: 1
-        Mob: WOOTAN_FIGHTER
-        Count: 50
-      - Id: 2
-        Mob: WOOTAN_SHOOTER
-        Count: 20
-      - Id: 3
-        Mob: STONE_SHOOTER
-        Count: 50
-      - Id: 3
-        Mob: PARASITE
-        Count: 50
-    Score: 10
+  # - Id: 1042
+  #   Group: Battle
+  #   Name: Yuno Bosses
+  #   Targets:
+  #     - Id: 0
+  #       Mob: APOCALIPS_H
+  #       Count: 1
+  #     - Id: 1
+  #       Mob: KIEL_
+  #       Count: 1
+  #   Score: 10
+  # - Id: 1043 ###############################################################################
+  #   Group: Battle
+  #   Name: Umbala Explorer
+  #   Dependents:
+  #     1044: true
+  #   Score: 10
+  # - Id: 1044
+  #   Group: Battle
+  #   Name: Exploring Umbala Forest and Dungeon
+  #   Targets:
+  #     - Id: 0
+  #       Mob: DRYAD
+  #       Count: 50
+  #     - Id: 1
+  #       Mob: WOOTAN_FIGHTER
+  #       Count: 50
+  #     - Id: 2
+  #       Mob: WOOTAN_SHOOTER
+  #       Count: 20
+  #     - Id: 3
+  #       Mob: STONE_SHOOTER
+  #       Count: 50
+  #     - Id: 3
+  #       Mob: PARASITE
+  #       Count: 50
+  #   Score: 10
   - Id: 1043 ###############################################################################
     Group: Battle
     Name: Comodo Explorer
@@ -1184,20 +1184,20 @@ Body:
         Mob: MEGALODON
         Count: 50
     Score: 10
-  - Id: 1045
-    Group: Battle
-    Name: Comodo Bosses
-    Targets:
-      - Id: 0
-        Mob: GRYPHON
-        Count: 1
-      - Id: 1
-        Mob: MUTANT_DRAGON
-        Count: 1
-      - Id: 2
-        Mob: TAO_GUNKA
-        Count: 1
-    Score: 10
+  # - Id: 1045
+  #   Group: Battle
+  #   Name: Comodo Bosses
+  #   Targets:
+  #     - Id: 0
+  #       Mob: GRYPHON
+  #       Count: 1
+  #     - Id: 1
+  #       Mob: MUTANT_DRAGON
+  #       Count: 1
+  #     - Id: 2
+  #       Mob: TAO_GUNKA
+  #       Count: 1
+  #   Score: 10
   - Id: 1046 ###############################################################################
     Group: Battle
     Name: Other Realms Explorer
@@ -1348,9 +1348,9 @@ Body:
       - Id: 9
         Mob: SEYREN
         Count: 30
-      - Id: 10
-        Mob: MAGALETA
-        Count: 30
+      # - Id: 10
+      #   Mob: MAGALETA
+      #   Count: 30
     #   - Id: 11
     #     Mob: KATRINN
     #     Count: 30
@@ -1374,7 +1374,7 @@ Body:
       - Id: 2
         Mob: B_MAGALETA
         Count: 1
-      - Id: 13
+      - Id: 3
         Mob: B_KATRINN
         Count: 1
       - Id: 4
