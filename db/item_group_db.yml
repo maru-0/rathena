@@ -48,7 +48,7 @@
 
 Header:
   Type: ITEM_GROUP_DB
-  Version: 5
+  Version: 4
 
 Footer:
   Imports:
