@@ -1706,7 +1706,7 @@ Body:
     Group: Battle
     Name: Xmas Explorer
     Dependents:
-      1075 true
+      1075: true
       1076: true
       1077: true
     Score: 10
@@ -1756,7 +1756,7 @@ Body:
     Group: Battle
     Name: Amatsu Explorer
     Dependents:
-      1079 true
+      1079: true
       1080: true
       1081: true
     Score: 10
@@ -1805,7 +1805,7 @@ Body:
     Group: Battle
     Name: Gonryun Explorer
     Dependents:
-      1083 true
+      1083: true
       1084: true
       1085: true
     Score: 10
