@@ -342,18 +342,18 @@ Body:
       - Id: 10
         Mob: SCORPION
         Count: 50
-      - Id: 11
-        Mob: CHONCHON
-        Count: 50
-      - Id: 12
-        Mob: STEEL_CHONCHON
-        Count: 50
-      - Id: 13
-        Mob: FRILLDORA
-        Count: 50
-      - Id: 14
-        Mob: METALLER
-        Count: 30
+      # - Id: 11
+      #   Mob: CHONCHON
+      #   Count: 50
+      # - Id: 12
+      #   Mob: STEEL_CHONCHON
+      #   Count: 50
+      # - Id: 13
+      #   Mob: FRILLDORA
+      #   Count: 50
+      # - Id: 14
+      #   Mob: METALLER
+      #   Count: 30
     Score: 10
   - Id: 1017
     Group: Battle
@@ -526,9 +526,9 @@ Body:
       - Id: 10
         Mob: AMBERNITE
         Count: 50
-      - Id: 11
-        Mob: DUSTINESS
-        Count: 50
+      # - Id: 11
+      #   Mob: DUSTINESS
+      #   Count: 50
     Score: 10
   - Id: 1024
     Group: Battle
@@ -635,13 +635,13 @@ Body:
       - Id: 10
         Mob: STROUF
         Count: 50
-      - Id: 11
-        Mob: SWORD_FISH
-        Count: 50
-      - Id: 12
-        Mob: DEVIACE
-        Count: 5
-    Score: 10
+    #   - Id: 11
+    #     Mob: SWORD_FISH
+    #     Count: 50
+    #   - Id: 12
+    #     Mob: DEVIACE
+    #     Count: 5
+    # Score: 10
   - Id: 1027 ###############################################################################
     Group: Battle
     Name: Geffen Explorer
@@ -841,43 +841,43 @@ Body:
       - Id: 10
         Mob: RAYDRIC
         Count: 50
-      - Id: 11
-        Mob: RAYDRIC_ARCHER
-        Count: 50
-      - Id: 12
-        Mob: ZOMBIE_PRISONER
-        Count: 50
-      - Id: 13
-        Mob: RYBIO
-        Count: 30
-      - Id: 14
-        Mob: INJUSTICE
-        Count: 50
-      - Id: 15
-        Mob: SKEL_PRISONER
-        Count: 50
-      - Id: 16
-        Mob: ZHERLTHSH
-        Count: 1
-      - Id: 17
-        Mob: PHENDARK
-        Count: 15
-      - Id: 18
-        Mob: WIND_GHOST
-        Count: 50
-      - Id: 19
-        Mob: ARCLOUSE
-        Count: 50
-      - Id: 20
-        Mob: STING
-        Count: 50
-      - Id: 21
-        Mob: ANOLIAN
-        Count: 50
-      - Id: 22
-        Mob: MAJORUROS
-        Count: 50
-    Score: 10
+    #   - Id: 11
+    #     Mob: RAYDRIC_ARCHER
+    #     Count: 50
+    #   - Id: 12
+    #     Mob: ZOMBIE_PRISONER
+    #     Count: 50
+    #   - Id: 13
+    #     Mob: RYBIO
+    #     Count: 30
+    #   - Id: 14
+    #     Mob: INJUSTICE
+    #     Count: 50
+    #   - Id: 15
+    #     Mob: SKEL_PRISONER
+    #     Count: 50
+    #   - Id: 16
+    #     Mob: ZHERLTHSH
+    #     Count: 1
+    #   - Id: 17
+    #     Mob: PHENDARK
+    #     Count: 15
+    #   - Id: 18
+    #     Mob: WIND_GHOST
+    #     Count: 50
+    #   - Id: 19
+    #     Mob: ARCLOUSE
+    #     Count: 50
+    #   - Id: 20
+    #     Mob: STING
+    #     Count: 50
+    #   - Id: 21
+    #     Mob: ANOLIAN
+    #     Count: 50
+    #   - Id: 22
+    #     Mob: MAJORUROS
+    #     Count: 50
+    # Score: 10
   - Id: 1035
     Group: Battle
     Name: Geffen Bosses
@@ -915,12 +915,12 @@ Body:
       - Id: 10
         Mob: DRACULA
         count: 1
-      - Id: 11
-        Mob: DOPPELGANGER
-        count: 1
-      - Id: 12
-        Mob: DARK_LORD
-        Count: 1
+      # - Id: 11
+      #   Mob: DOPPELGANGER
+      #   count: 1
+      # - Id: 12
+      #   Mob: DARK_LORD
+      #   Count: 1
     Score: 10
   - Id: 1036 ###############################################################################
     Group: Battle
@@ -1351,16 +1351,16 @@ Body:
       - Id: 10
         Mob: MAGALETA
         Count: 30
-      - Id: 11
-        Mob: KATRINN
-        Count: 30
-      - Id: 12
-        Mob: SHECIL
-        Count: 30
-      - Id: 13
-        Mob: HARWORD
-        Count: 30
-    Score: 10
+    #   - Id: 11
+    #     Mob: KATRINN
+    #     Count: 30
+    #   - Id: 12
+    #     Mob: SHECIL
+    #     Count: 30
+    #   - Id: 13
+    #     Mob: HARWORD
+    #     Count: 30
+    # Score: 10
   - Id: 1055
     Group: Battle
     Name: Lighthalzen Bosses
