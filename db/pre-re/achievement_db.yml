@@ -246,7 +246,7 @@ Body:
         Mob: MUNAK
         Count: 50
       - Id: 6
-        Mob: BONGUN
+        Mob: BON_GUN
         Count: 50
     Score: 10
   - Id: 1013
