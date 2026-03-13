@@ -6198,6 +6198,8 @@ Body:
     AegisName: N_Fly_Wing
     Name: Novice Fly Wing
     Type: Delayconsume
+    Flags:
+      NoConsume: true
     NoUse:
       Sitting: true
     Trade:
@@ -6215,6 +6217,8 @@ Body:
     AegisName: N_Butterfly_Wing
     Name: Novice Butterfly Wing
     Type: Delayconsume
+    Flags:
+      NoConsume: true
     NoUse:
       Sitting: true
     Trade:
