@@ -715,6 +715,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      NoConsume: true
     Script: |
       itemheal rand(22,33),0;
   - Id: 570
